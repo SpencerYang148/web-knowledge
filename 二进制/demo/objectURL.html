@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+
+    <img id="previewContainer" style="width: 50%;" />
+    <script>
+        const image = document.querySelector("#previewContainer");
+        fetch("./images/示例图片.png")
+            .then((response) => response.blob())
+            .then((blob) => {
+                const objectURL = URL.createObjectURL(blob);
+                image.src = objectURL;
+            });
+    </script>
+
+</body>
+
+</html>

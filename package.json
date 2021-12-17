@@ -1,0 +1,14 @@
+{
+  "name": "web-knowledge",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/SpencerYang148/web-knowledge.git",
+  "author": "yangshibin <yangshibin@cvte.com>",
+  "license": "MIT",
+  "scripts": {
+    "build": "tsc -w"
+  },
+  "devDependencies": {
+    "typescript": "4.5.4"
+  }
+}
