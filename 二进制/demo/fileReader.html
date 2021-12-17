@@ -13,9 +13,15 @@
 
     <script>
         const loadFile = function (event) {
-            const objectURL = URL.createObjectURL(event.target.files[0])
-            const container = document.querySelector("#previewContainer");
-            container.src = objectURL
+            const reader = new FileReader();
+            reader.onload = function () {
+                const output = document.querySelector("#previewContainer");
+                // 做一些修改arrayBuffer的操作
+                const arrayBuffer = reader.result
+                const blob = new Blob([arrayBuffer])
+                output.src = URL.createObjectURL(blob);
+            };
+            reader.readAsArrayBuffer(event.target.files[0]);
         };
     </script>
 
@@ -27,6 +33,14 @@
             output.src = reader.result;
         };
         reader.readAsDataURL(event.target.files[0]);
+    };
+</script> -->
+
+    <!-- <script>
+    const loadFile = function (event) {
+        const objectURL = URL.createObjectURL(event.target.files[0])
+        const container = document.querySelector("#previewContainer");
+        container.src = objectURL
     };
 </script> -->
 </body>
