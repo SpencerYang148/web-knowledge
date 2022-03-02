@@ -42,3 +42,11 @@ explorer.exe <String>
 ```shell
 del <String> -Force -Recurse
 ```
+
+## 重命名
+> [Rename-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/rename-item)
+### 命令
+```shell
+rni <String> <String>
+Get-ChildItem <String> -Recurse | Rename-Item -NewName { $_.Name -replace '<String>','<String>' }
+```
