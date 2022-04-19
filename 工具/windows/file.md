@@ -1,24 +1,3 @@
-## 资料
-[Awesome-Windows](https://github.com/Awesome-Windows/Awesome)
-
-
-## 环境变量
-> [powershell env](https://docs.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_environment_variables)
-### 命令
-```shell
-# cmd
-set name
-set name=value
-```
-```shell
-# powershell
-Get-ChildItem env:
-Get-ChildItem env:name
-Get-ChildItem env:name="value"
-$env:name
-$env:name="value"
-```
-
 ## 打开文件或文件夹
 > [Invoke-Item](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/invoke-item)
 > [Start-Process](https://docs.microsoft.com/en-us/powershell/module/microsoft.powershell.management/start-process)
