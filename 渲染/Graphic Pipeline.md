@@ -4,7 +4,7 @@
 4. 片元着色（Fragment Shader）
 5. 像素操作pixel operation
 
-<img style="background-color:#FFF" src="./images/graphics-pipeline.png" />
+![](./images/graphics-pipeline.png)
 
 
 [图解GPU](https://zhuanlan.zhihu.com/p/481294223)
