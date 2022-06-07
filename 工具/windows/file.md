@@ -29,3 +29,16 @@ del <String> -Force -Recurse
 rni <String> <String>
 Get-ChildItem <String> -Recurse | Rename-Item -NewName { $_.Name -replace '<String>','<String>' }
 ```
+
+## 创建文件
+> [fsutil-file](https://docs.microsoft.com/en-us/windows-server/administration/windows-commands/fsutil-file)
+> [create-a-file-using-command](https://windowsloop.com/how-to-create-a-file-using-command-prompt-or-powershell/)
+### 命令
+```shell
+# echo
+echo <content[]> > <filename>
+# fsutil
+fsutil file createnew <filename> <length>
+# New-item
+New-item -Path . -Name "filename.txt" -ItemType "file"
+```
