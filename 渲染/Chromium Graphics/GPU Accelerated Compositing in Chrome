@@ -1,9 +1,9 @@
 ### The benefits of hardware compositing:
-- Compositing page layers on the GPU can achieve far better efficiency
+- GPU更适合图像处理：Compositing page layers on the GPU can achieve far better efficiency
 than the CPU (both in terms of speed and power draw) in drawing and
 compositing operations that involve large numbers of pixels. The hardware is
 designed specifically for these types of workloads.
-- Expensive readbacks aren’t necessary for content already on the GPU
+- GPU不需要昂贵的readbacks：Expensive readbacks aren’t necessary for content already on the GPU
 (such as accelerated video, Canvas2D, or WebGL).
-- Parallelism between the CPU and GPU, which can operate at the same time
+- GPU和CPU并行：Parallelism between the CPU and GPU, which can operate at the same time
 to create an efficient graphics pipeline.
