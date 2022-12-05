@@ -1,8 +1,10 @@
-1. 顶点处理（vertex shader）
-2. 图元组装（primitive assembly）
-3. 栅格化（Rasterization）
-4. 片元着色（Fragment Shader）
-5. 像素操作pixel operation
+### The Graphics Pipeline
+1. 顶点着色（Vertex shader）
+2. 图元组装（Shape assembly）
+3. 几何着色器（Geometry shader）
+4. 栅格化（Rasterization）
+5. 片元着色（Fragment shader）
+6. 测试与混合（Test and Blending）
 
 ![](./images/graphics-pipeline.png)
 
